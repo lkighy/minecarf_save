@@ -1,0 +1,389 @@
+JVM info: Ubuntu - 11.0.8 - 11.0.8+10-post-Ubuntu-0ubuntu118.04.1
+java.net.preferIPv4Stack=true
+Found java version 11.0.8
+Target Directory: .
+Extractiung main jar:
+  Extracted successfully
+Considering minecraft server jar
+Downloading libraries
+Considering library net.minecraftforge:forge:1.12.2-14.23.5.2854
+  Extracting library from /maven/net/minecraftforge/forge/1.12.2-14.23.5.2854/forge-1.12.2-14.23.5.2854.jar
+    Extraction completed: Checksum validated.
+Considering library org.ow2.asm:asm-debug-all:5.2
+  Downloading library from https://files.minecraftforge.net/maven/org/ow2/asm/asm-debug-all/5.2/asm-debug-all-5.2.jar
+java.net.SocketTimeoutException: Read timed out
+	at java.base/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:467)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readFully(SSLSocketInputRecord.java:450)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.decodeInputRecord(SSLSocketInputRecord.java:243)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.decode(SSLSocketInputRecord.java:181)
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:110)
+	at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1406)
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1371)
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:958)
+	at java.base/java.io.BufferedInputStream.read1(BufferedInputStream.java:290)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:351)
+	at java.base/sun.net.www.MeteredStream.read(MeteredStream.java:134)
+	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:133)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection$HttpInputStream.read(HttpURLConnection.java:3510)
+	at java.base/java.io.InputStream.transferTo(InputStream.java:704)
+	at java.base/java.nio.file.Files.copy(Files.java:3077)
+	at net.minecraftforge.installer.DownloadUtils.download(DownloadUtils.java:146)
+	at net.minecraftforge.installer.DownloadUtils.download(DownloadUtils.java:134)
+	at net.minecraftforge.installer.DownloadUtils.downloadLibrary(DownloadUtils.java:123)
+	at net.minecraftforge.installer.actions.Action.downloadLibraries(Action.java:79)
+	at net.minecraftforge.installer.actions.ServerInstall.run(ServerInstall.java:91)
+	at net.minecraftforge.installer.SimpleInstaller.main(SimpleInstaller.java:122)
+Considering library net.minecraft:launchwrapper:1.12
+  Downloading library from https://libraries.minecraft.net/net/minecraft/launchwrapper/1.12/launchwrapper-1.12.jar
+    Download completed: Checksum validated.
+Considering library org.jline:jline:3.5.1
+  Downloading library from https://files.minecraftforge.net/maven/org/jline/jline/3.5.1/jline-3.5.1.jar
+java.net.SocketTimeoutException: Read timed out
+	at java.base/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:467)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readFully(SSLSocketInputRecord.java:450)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.decodeInputRecord(SSLSocketInputRecord.java:243)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.decode(SSLSocketInputRecord.java:181)
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:110)
+	at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1406)
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1371)
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:958)
+	at java.base/java.io.BufferedInputStream.read1(BufferedInputStream.java:290)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:351)
+	at java.base/sun.net.www.MeteredStream.read(MeteredStream.java:134)
+	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:133)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection$HttpInputStream.read(HttpURLConnection.java:3510)
+	at java.base/java.io.InputStream.transferTo(InputStream.java:704)
+	at java.base/java.nio.file.Files.copy(Files.java:3077)
+	at net.minecraftforge.installer.DownloadUtils.download(DownloadUtils.java:146)
+	at net.minecraftforge.installer.DownloadUtils.download(DownloadUtils.java:134)
+	at net.minecraftforge.installer.DownloadUtils.downloadLibrary(DownloadUtils.java:123)
+	at net.minecraftforge.installer.actions.Action.downloadLibraries(Action.java:79)
+	at net.minecraftforge.installer.actions.ServerInstall.run(ServerInstall.java:91)
+	at net.minecraftforge.installer.SimpleInstaller.main(SimpleInstaller.java:122)
+Considering library com.typesafe.akka:akka-actor_2.11:2.3.3
+  Downloading library from https://files.minecraftforge.net/maven/com/typesafe/akka/akka-actor_2.11/2.3.3/akka-actor_2.11-2.3.3.jar
+java.net.SocketTimeoutException: Read timed out
+	at java.base/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:467)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readFully(SSLSocketInputRecord.java:450)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.decodeInputRecord(SSLSocketInputRecord.java:243)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.decode(SSLSocketInputRecord.java:181)
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:110)
+	at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1406)
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1371)
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:958)
+	at java.base/java.io.BufferedInputStream.read1(BufferedInputStream.java:290)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:351)
+	at java.base/sun.net.www.MeteredStream.read(MeteredStream.java:134)
+	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:133)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection$HttpInputStream.read(HttpURLConnection.java:3510)
+	at java.base/java.io.InputStream.transferTo(InputStream.java:704)
+	at java.base/java.nio.file.Files.copy(Files.java:3077)
+	at net.minecraftforge.installer.DownloadUtils.download(DownloadUtils.java:146)
+	at net.minecraftforge.installer.DownloadUtils.download(DownloadUtils.java:134)
+	at net.minecraftforge.installer.DownloadUtils.downloadLibrary(DownloadUtils.java:123)
+	at net.minecraftforge.installer.actions.Action.downloadLibraries(Action.java:79)
+	at net.minecraftforge.installer.actions.ServerInstall.run(ServerInstall.java:91)
+	at net.minecraftforge.installer.SimpleInstaller.main(SimpleInstaller.java:122)
+Considering library com.typesafe:config:1.2.1
+  Downloading library from https://files.minecraftforge.net/maven/com/typesafe/config/1.2.1/config-1.2.1.jar
+java.net.SocketTimeoutException: Read timed out
+	at java.base/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:467)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readFully(SSLSocketInputRecord.java:450)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.decodeInputRecord(SSLSocketInputRecord.java:243)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.decode(SSLSocketInputRecord.java:181)
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:110)
+	at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1406)
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1371)
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:958)
+	at java.base/java.io.BufferedInputStream.read1(BufferedInputStream.java:290)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:351)
+	at java.base/sun.net.www.MeteredStream.read(MeteredStream.java:134)
+	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:133)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection$HttpInputStream.read(HttpURLConnection.java:3510)
+	at java.base/java.io.InputStream.transferTo(InputStream.java:704)
+	at java.base/java.nio.file.Files.copy(Files.java:3077)
+	at net.minecraftforge.installer.DownloadUtils.download(DownloadUtils.java:146)
+	at net.minecraftforge.installer.DownloadUtils.download(DownloadUtils.java:134)
+	at net.minecraftforge.installer.DownloadUtils.downloadLibrary(DownloadUtils.java:123)
+	at net.minecraftforge.installer.actions.Action.downloadLibraries(Action.java:79)
+	at net.minecraftforge.installer.actions.ServerInstall.run(ServerInstall.java:91)
+	at net.minecraftforge.installer.SimpleInstaller.main(SimpleInstaller.java:122)
+Considering library org.scala-lang:scala-actors-migration_2.11:1.1.0
+  Downloading library from https://files.minecraftforge.net/maven/org/scala-lang/scala-actors-migration_2.11/1.1.0/scala-actors-migration_2.11-1.1.0.jar
+    Download completed: Checksum validated.
+Considering library org.scala-lang:scala-compiler:2.11.1
+  Downloading library from https://files.minecraftforge.net/maven/org/scala-lang/scala-compiler/2.11.1/scala-compiler-2.11.1.jar
+java.net.SocketTimeoutException: Read timed out
+	at java.base/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:467)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readFully(SSLSocketInputRecord.java:450)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.decodeInputRecord(SSLSocketInputRecord.java:243)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.decode(SSLSocketInputRecord.java:181)
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:110)
+	at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1406)
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1371)
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:958)
+	at java.base/java.io.BufferedInputStream.fill(BufferedInputStream.java:252)
+	at java.base/java.io.BufferedInputStream.read1(BufferedInputStream.java:292)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:351)
+	at java.base/sun.net.www.http.HttpClient.parseHTTPHeader(HttpClient.java:754)
+	at java.base/sun.net.www.http.HttpClient.parseHTTP(HttpClient.java:689)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1615)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1520)
+	at java.base/java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:527)
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:334)
+	at net.minecraftforge.installer.DownloadUtils.getConnection(DownloadUtils.java:203)
+	at net.minecraftforge.installer.DownloadUtils.download(DownloadUtils.java:144)
+	at net.minecraftforge.installer.DownloadUtils.download(DownloadUtils.java:134)
+	at net.minecraftforge.installer.DownloadUtils.downloadLibrary(DownloadUtils.java:123)
+	at net.minecraftforge.installer.actions.Action.downloadLibraries(Action.java:79)
+	at net.minecraftforge.installer.actions.ServerInstall.run(ServerInstall.java:91)
+	at net.minecraftforge.installer.SimpleInstaller.main(SimpleInstaller.java:122)
+Considering library org.scala-lang.plugins:scala-continuations-library_2.11:1.0.2_mc
+  Downloading library from https://files.minecraftforge.net/maven/org/scala-lang/plugins/scala-continuations-library_2.11/1.0.2_mc/scala-continuations-library_2.11-1.0.2_mc.jar
+java.net.SocketTimeoutException: Read timed out
+	at java.base/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:467)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readFully(SSLSocketInputRecord.java:450)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.decodeInputRecord(SSLSocketInputRecord.java:243)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.decode(SSLSocketInputRecord.java:181)
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:110)
+	at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1406)
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1371)
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:958)
+	at java.base/java.io.BufferedInputStream.fill(BufferedInputStream.java:252)
+	at java.base/java.io.BufferedInputStream.read1(BufferedInputStream.java:292)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:351)
+	at java.base/sun.net.www.http.HttpClient.parseHTTPHeader(HttpClient.java:754)
+	at java.base/sun.net.www.http.HttpClient.parseHTTP(HttpClient.java:689)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1615)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1520)
+	at java.base/java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:527)
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:334)
+	at net.minecraftforge.installer.DownloadUtils.getConnection(DownloadUtils.java:203)
+	at net.minecraftforge.installer.DownloadUtils.download(DownloadUtils.java:144)
+	at net.minecraftforge.installer.DownloadUtils.download(DownloadUtils.java:134)
+	at net.minecraftforge.installer.DownloadUtils.downloadLibrary(DownloadUtils.java:123)
+	at net.minecraftforge.installer.actions.Action.downloadLibraries(Action.java:79)
+	at net.minecraftforge.installer.actions.ServerInstall.run(ServerInstall.java:91)
+	at net.minecraftforge.installer.SimpleInstaller.main(SimpleInstaller.java:122)
+Considering library org.scala-lang.plugins:scala-continuations-plugin_2.11.1:1.0.2_mc
+  Downloading library from https://files.minecraftforge.net/maven/org/scala-lang/plugins/scala-continuations-plugin_2.11.1/1.0.2_mc/scala-continuations-plugin_2.11.1-1.0.2_mc.jar
+java.net.SocketTimeoutException: Read timed out
+	at java.base/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:467)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readFully(SSLSocketInputRecord.java:450)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.decodeInputRecord(SSLSocketInputRecord.java:243)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.decode(SSLSocketInputRecord.java:181)
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:110)
+	at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1406)
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1371)
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:958)
+	at java.base/java.io.BufferedInputStream.read1(BufferedInputStream.java:290)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:351)
+	at java.base/sun.net.www.MeteredStream.read(MeteredStream.java:134)
+	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:133)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection$HttpInputStream.read(HttpURLConnection.java:3510)
+	at java.base/java.io.InputStream.transferTo(InputStream.java:704)
+	at java.base/java.nio.file.Files.copy(Files.java:3077)
+	at net.minecraftforge.installer.DownloadUtils.download(DownloadUtils.java:146)
+	at net.minecraftforge.installer.DownloadUtils.download(DownloadUtils.java:134)
+	at net.minecraftforge.installer.DownloadUtils.downloadLibrary(DownloadUtils.java:123)
+	at net.minecraftforge.installer.actions.Action.downloadLibraries(Action.java:79)
+	at net.minecraftforge.installer.actions.ServerInstall.run(ServerInstall.java:91)
+	at net.minecraftforge.installer.SimpleInstaller.main(SimpleInstaller.java:122)
+Considering library org.scala-lang:scala-library:2.11.1
+  Downloading library from https://files.minecraftforge.net/maven/org/scala-lang/scala-library/2.11.1/scala-library-2.11.1.jar
+java.net.SocketTimeoutException: Read timed out
+	at java.base/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:467)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readFully(SSLSocketInputRecord.java:450)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.decodeInputRecord(SSLSocketInputRecord.java:243)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.decode(SSLSocketInputRecord.java:181)
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:110)
+	at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1406)
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1371)
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:958)
+	at java.base/java.io.BufferedInputStream.read1(BufferedInputStream.java:290)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:351)
+	at java.base/sun.net.www.MeteredStream.read(MeteredStream.java:134)
+	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:133)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection$HttpInputStream.read(HttpURLConnection.java:3510)
+	at java.base/java.io.InputStream.transferTo(InputStream.java:704)
+	at java.base/java.nio.file.Files.copy(Files.java:3077)
+	at net.minecraftforge.installer.DownloadUtils.download(DownloadUtils.java:146)
+	at net.minecraftforge.installer.DownloadUtils.download(DownloadUtils.java:134)
+	at net.minecraftforge.installer.DownloadUtils.downloadLibrary(DownloadUtils.java:123)
+	at net.minecraftforge.installer.actions.Action.downloadLibraries(Action.java:79)
+	at net.minecraftforge.installer.actions.ServerInstall.run(ServerInstall.java:91)
+	at net.minecraftforge.installer.SimpleInstaller.main(SimpleInstaller.java:122)
+Considering library org.scala-lang:scala-parser-combinators_2.11:1.0.1
+  Downloading library from https://files.minecraftforge.net/maven/org/scala-lang/scala-parser-combinators_2.11/1.0.1/scala-parser-combinators_2.11-1.0.1.jar
+java.net.SocketTimeoutException: Read timed out
+	at java.base/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:467)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readFully(SSLSocketInputRecord.java:450)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.decodeInputRecord(SSLSocketInputRecord.java:243)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.decode(SSLSocketInputRecord.java:181)
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:110)
+	at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1406)
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1371)
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:958)
+	at java.base/java.io.BufferedInputStream.read1(BufferedInputStream.java:290)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:351)
+	at java.base/sun.net.www.MeteredStream.read(MeteredStream.java:134)
+	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:133)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection$HttpInputStream.read(HttpURLConnection.java:3510)
+	at java.base/java.io.InputStream.transferTo(InputStream.java:704)
+	at java.base/java.nio.file.Files.copy(Files.java:3077)
+	at net.minecraftforge.installer.DownloadUtils.download(DownloadUtils.java:146)
+	at net.minecraftforge.installer.DownloadUtils.download(DownloadUtils.java:134)
+	at net.minecraftforge.installer.DownloadUtils.downloadLibrary(DownloadUtils.java:123)
+	at net.minecraftforge.installer.actions.Action.downloadLibraries(Action.java:79)
+	at net.minecraftforge.installer.actions.ServerInstall.run(ServerInstall.java:91)
+	at net.minecraftforge.installer.SimpleInstaller.main(SimpleInstaller.java:122)
+Considering library org.scala-lang:scala-reflect:2.11.1
+  Downloading library from https://files.minecraftforge.net/maven/org/scala-lang/scala-reflect/2.11.1/scala-reflect-2.11.1.jar
+java.net.SocketTimeoutException: Read timed out
+	at java.base/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:467)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readFully(SSLSocketInputRecord.java:450)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.decodeInputRecord(SSLSocketInputRecord.java:243)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.decode(SSLSocketInputRecord.java:181)
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:110)
+	at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1406)
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1371)
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:958)
+	at java.base/java.io.BufferedInputStream.read1(BufferedInputStream.java:290)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:351)
+	at java.base/sun.net.www.MeteredStream.read(MeteredStream.java:134)
+	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:133)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection$HttpInputStream.read(HttpURLConnection.java:3510)
+	at java.base/java.io.InputStream.transferTo(InputStream.java:704)
+	at java.base/java.nio.file.Files.copy(Files.java:3077)
+	at net.minecraftforge.installer.DownloadUtils.download(DownloadUtils.java:146)
+	at net.minecraftforge.installer.DownloadUtils.download(DownloadUtils.java:134)
+	at net.minecraftforge.installer.DownloadUtils.downloadLibrary(DownloadUtils.java:123)
+	at net.minecraftforge.installer.actions.Action.downloadLibraries(Action.java:79)
+	at net.minecraftforge.installer.actions.ServerInstall.run(ServerInstall.java:91)
+	at net.minecraftforge.installer.SimpleInstaller.main(SimpleInstaller.java:122)
+Considering library org.scala-lang:scala-swing_2.11:1.0.1
+  Downloading library from https://files.minecraftforge.net/maven/org/scala-lang/scala-swing_2.11/1.0.1/scala-swing_2.11-1.0.1.jar
+java.net.SocketTimeoutException: Read timed out
+	at java.base/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:467)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readFully(SSLSocketInputRecord.java:450)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.decodeInputRecord(SSLSocketInputRecord.java:243)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.decode(SSLSocketInputRecord.java:181)
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:110)
+	at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1406)
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1371)
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:958)
+	at java.base/java.io.BufferedInputStream.read1(BufferedInputStream.java:290)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:351)
+	at java.base/sun.net.www.MeteredStream.read(MeteredStream.java:134)
+	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:133)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection$HttpInputStream.read(HttpURLConnection.java:3510)
+	at java.base/java.io.InputStream.transferTo(InputStream.java:704)
+	at java.base/java.nio.file.Files.copy(Files.java:3077)
+	at net.minecraftforge.installer.DownloadUtils.download(DownloadUtils.java:146)
+	at net.minecraftforge.installer.DownloadUtils.download(DownloadUtils.java:134)
+	at net.minecraftforge.installer.DownloadUtils.downloadLibrary(DownloadUtils.java:123)
+	at net.minecraftforge.installer.actions.Action.downloadLibraries(Action.java:79)
+	at net.minecraftforge.installer.actions.ServerInstall.run(ServerInstall.java:91)
+	at net.minecraftforge.installer.SimpleInstaller.main(SimpleInstaller.java:122)
+Considering library org.scala-lang:scala-xml_2.11:1.0.2
+  Downloading library from https://files.minecraftforge.net/maven/org/scala-lang/scala-xml_2.11/1.0.2/scala-xml_2.11-1.0.2.jar
+java.net.SocketTimeoutException: Read timed out
+	at java.base/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:467)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:461)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70)
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1349)
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:958)
+	at java.base/java.io.BufferedInputStream.fill(BufferedInputStream.java:252)
+	at java.base/java.io.BufferedInputStream.read1(BufferedInputStream.java:292)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:351)
+	at java.base/sun.net.www.http.HttpClient.parseHTTPHeader(HttpClient.java:754)
+	at java.base/sun.net.www.http.HttpClient.parseHTTP(HttpClient.java:689)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1615)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1520)
+	at java.base/java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:527)
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:334)
+	at net.minecraftforge.installer.DownloadUtils.getConnection(DownloadUtils.java:203)
+	at net.minecraftforge.installer.DownloadUtils.download(DownloadUtils.java:144)
+	at net.minecraftforge.installer.DownloadUtils.download(DownloadUtils.java:134)
+	at net.minecraftforge.installer.DownloadUtils.downloadLibrary(DownloadUtils.java:123)
+	at net.minecraftforge.installer.actions.Action.downloadLibraries(Action.java:79)
+	at net.minecraftforge.installer.actions.ServerInstall.run(ServerInstall.java:91)
+	at net.minecraftforge.installer.SimpleInstaller.main(SimpleInstaller.java:122)
+Considering library lzma:lzma:0.0.1
+  Downloading library from https://libraries.minecraft.net/lzma/lzma/0.0.1/lzma-0.0.1.jar
+    Download completed: Checksum validated.
+Considering library java3d:vecmath:1.5.2
+  Downloading library from https://libraries.minecraft.net/java3d/vecmath/1.5.2/vecmath-1.5.2.jar
+    Download completed: Checksum validated.
+Considering library net.sf.trove4j:trove4j:3.0.3
+  Downloading library from https://libraries.minecraft.net/net/sf/trove4j/trove4j/3.0.3/trove4j-3.0.3.jar
+    Download completed: Checksum validated.
+Considering library org.apache.maven:maven-artifact:3.5.3
+  Downloading library from https://files.minecraftforge.net/maven/org/apache/maven/maven-artifact/3.5.3/maven-artifact-3.5.3.jar
+    Download completed: Checksum validated.
+Considering library net.sf.jopt-simple:jopt-simple:5.0.3
+  Downloading library from https://libraries.minecraft.net/net/sf/jopt-simple/jopt-simple/5.0.3/jopt-simple-5.0.3.jar
+    Download completed: Checksum validated.
+These libraries failed to download. Try again.
+
+org.ow2.asm:asm-debug-all:5.2
+org.jline:jline:3.5.1
+com.typesafe.akka:akka-actor_2.11:2.3.3
+com.typesafe:config:1.2.1
+org.scala-lang:scala-compiler:2.11.1
+org.scala-lang.plugins:scala-continuations-library_2.11:1.0.2_mc
+org.scala-lang.plugins:scala-continuations-plugin_2.11.1:1.0.2_mc
+org.scala-lang:scala-library:2.11.1
+org.scala-lang:scala-parser-combinators_2.11:1.0.1
+org.scala-lang:scala-reflect:2.11.1
+org.scala-lang:scala-swing_2.11:1.0.1
+org.scala-lang:scala-xml_2.11:1.0.2
+There was an error during installation

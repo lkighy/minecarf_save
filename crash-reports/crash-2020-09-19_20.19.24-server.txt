@@ -1,0 +1,236 @@
+---- Minecraft Crash Report ----
+
+WARNING: coremods are present:
+  TconEvoCoreMod (匠魂进化-1.12.2-1.0.32.jar)
+  LibrarianLib Plugin (librarianlib-1.12.2-4.22.jar)
+  ForgelinPlugin (Shadowfacts' Forgelin-1.8.4.jar)
+  Wizardry Plugin (巫师艺术-0.11.1.jar)
+Contact their authors BEFORE contacting forge
+
+// You're mean.
+
+Time: 9/19/20 8:19 PM
+Description: Loading NBT data
+
+java.io.EOFException: Unexpected end of ZLIB input stream
+	at java.util.zip.InflaterInputStream.fill(InflaterInputStream.java:240)
+	at java.util.zip.InflaterInputStream.read(InflaterInputStream.java:158)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:286)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:345)
+	at java.io.DataInputStream.readFully(DataInputStream.java:195)
+	at java.io.DataInputStream.readUTF(DataInputStream.java:609)
+	at java.io.DataInputStream.readUTF(DataInputStream.java:564)
+	at net.minecraft.nbt.NBTTagCompound.func_152448_b(NBTTagCompound.java:487)
+	at net.minecraft.nbt.NBTTagCompound.func_152446_a(NBTTagCompound.java:56)
+	at net.minecraft.nbt.CompressedStreamTools.func_152455_a(CompressedStreamTools.java:133)
+	at net.minecraft.nbt.CompressedStreamTools.func_152456_a(CompressedStreamTools.java:88)
+	at net.minecraft.nbt.CompressedStreamTools.func_74794_a(CompressedStreamTools.java:83)
+	at net.minecraft.world.chunk.storage.AnvilChunkLoader.loadChunk__Async(AnvilChunkLoader.java:89)
+	at net.minecraftforge.common.chunkio.ChunkIOProvider.run(ChunkIOProvider.java:70)
+	at net.minecraftforge.common.chunkio.ChunkIOExecutor.syncChunkLoad(ChunkIOExecutor.java:92)
+	at net.minecraft.world.gen.ChunkProviderServer.loadChunk(ChunkProviderServer.java:118)
+	at net.minecraft.world.gen.ChunkProviderServer.func_186028_c(ChunkProviderServer.java:89)
+	at net.minecraft.world.gen.ChunkProviderServer.func_186025_d(ChunkProviderServer.java:135)
+	at net.minecraft.world.World.func_72964_e(World.java:310)
+	at net.minecraft.world.ChunkCache.<init>(ChunkCache.java:37)
+	at net.minecraft.pathfinding.PathNavigate.func_179680_a(SourceFile:113)
+	at net.minecraft.pathfinding.PathNavigateGround.func_179680_a(SourceFile:65)
+	at net.minecraft.pathfinding.PathNavigate.func_75488_a(SourceFile:93)
+	at net.minecraft.pathfinding.PathNavigate.func_75492_a(SourceFile:143)
+	at net.minecraft.entity.ai.EntityAIWander.func_75249_e(SourceFile:65)
+	at net.minecraft.entity.ai.EntityAITasks.func_75774_a(SourceFile:102)
+	at net.minecraft.entity.EntityLiving.func_70626_be(EntityLiving.java:763)
+	at net.minecraft.entity.EntityLivingBase.func_70636_d(EntityLivingBase.java:2359)
+	at net.minecraft.entity.EntityLiving.func_70636_d(EntityLiving.java:577)
+	at net.minecraft.entity.monster.EntityMob.func_70636_d(EntityMob.java:45)
+	at net.minecraft.entity.monster.EntityZombie.func_70636_d(EntityZombie.java:223)
+	at net.minecraft.entity.EntityLivingBase.func_70071_h_(EntityLivingBase.java:2179)
+	at net.minecraft.entity.EntityLiving.func_70071_h_(EntityLiving.java:295)
+	at net.minecraft.entity.monster.EntityMob.func_70071_h_(EntityMob.java:50)
+	at net.minecraft.world.World.func_72866_a(World.java:1996)
+	at net.minecraft.world.WorldServer.func_72866_a(WorldServer.java:832)
+	at net.minecraft.world.World.func_72870_g(World.java:1958)
+	at net.minecraft.world.World.func_72939_s(World.java:1762)
+	at net.minecraft.world.WorldServer.func_72939_s(WorldServer.java:613)
+	at net.minecraft.server.MinecraftServer.func_71190_q(MinecraftServer.java:767)
+	at net.minecraft.server.dedicated.DedicatedServer.func_71190_q(DedicatedServer.java:397)
+	at net.minecraft.server.MinecraftServer.func_71217_p(MinecraftServer.java:668)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:526)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Stacktrace:
+	at java.util.zip.InflaterInputStream.fill(InflaterInputStream.java:240)
+	at java.util.zip.InflaterInputStream.read(InflaterInputStream.java:158)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:286)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:345)
+	at java.io.DataInputStream.readFully(DataInputStream.java:195)
+	at java.io.DataInputStream.readUTF(DataInputStream.java:609)
+	at java.io.DataInputStream.readUTF(DataInputStream.java:564)
+	at net.minecraft.nbt.NBTTagCompound.func_152448_b(NBTTagCompound.java:487)
+	at net.minecraft.nbt.NBTTagCompound.func_152446_a(NBTTagCompound.java:56)
+
+-- NBT Tag --
+Details:
+	Tag type: 10
+Stacktrace:
+	at net.minecraft.nbt.CompressedStreamTools.func_152455_a(CompressedStreamTools.java:133)
+	at net.minecraft.nbt.CompressedStreamTools.func_152456_a(CompressedStreamTools.java:88)
+	at net.minecraft.nbt.CompressedStreamTools.func_74794_a(CompressedStreamTools.java:83)
+	at net.minecraft.world.chunk.storage.AnvilChunkLoader.loadChunk__Async(AnvilChunkLoader.java:89)
+	at net.minecraftforge.common.chunkio.ChunkIOProvider.run(ChunkIOProvider.java:70)
+	at net.minecraftforge.common.chunkio.ChunkIOExecutor.syncChunkLoad(ChunkIOExecutor.java:92)
+	at net.minecraft.world.gen.ChunkProviderServer.loadChunk(ChunkProviderServer.java:118)
+	at net.minecraft.world.gen.ChunkProviderServer.func_186028_c(ChunkProviderServer.java:89)
+	at net.minecraft.world.gen.ChunkProviderServer.func_186025_d(ChunkProviderServer.java:135)
+	at net.minecraft.world.World.func_72964_e(World.java:310)
+	at net.minecraft.world.ChunkCache.<init>(ChunkCache.java:37)
+	at net.minecraft.pathfinding.PathNavigate.func_179680_a(SourceFile:113)
+	at net.minecraft.pathfinding.PathNavigateGround.func_179680_a(SourceFile:65)
+	at net.minecraft.pathfinding.PathNavigate.func_75488_a(SourceFile:93)
+	at net.minecraft.pathfinding.PathNavigate.func_75492_a(SourceFile:143)
+	at net.minecraft.entity.ai.EntityAIWander.func_75249_e(SourceFile:65)
+	at net.minecraft.entity.ai.EntityAITasks.func_75774_a(SourceFile:102)
+	at net.minecraft.entity.EntityLiving.func_70626_be(EntityLiving.java:763)
+	at net.minecraft.entity.EntityLivingBase.func_70636_d(EntityLivingBase.java:2359)
+	at net.minecraft.entity.EntityLiving.func_70636_d(EntityLiving.java:577)
+	at net.minecraft.entity.monster.EntityMob.func_70636_d(EntityMob.java:45)
+	at net.minecraft.entity.monster.EntityZombie.func_70636_d(EntityZombie.java:223)
+	at net.minecraft.entity.EntityLivingBase.func_70071_h_(EntityLivingBase.java:2179)
+	at net.minecraft.entity.EntityLiving.func_70071_h_(EntityLiving.java:295)
+	at net.minecraft.entity.monster.EntityMob.func_70071_h_(EntityMob.java:50)
+	at net.minecraft.world.World.func_72866_a(World.java:1996)
+	at net.minecraft.world.WorldServer.func_72866_a(WorldServer.java:832)
+	at net.minecraft.world.World.func_72870_g(World.java:1958)
+
+-- Entity being ticked --
+Details:
+	Entity Type: minecraft:zombie (net.minecraft.entity.monster.EntityZombie)
+	Entity ID: 39
+	Entity Name: Zombie
+	Entity's Exact location: 38.30, 49.00, 294.48
+	Entity's Block location: World: (38,49,294), Chunk: (at 6,3,6 in 2,18; contains blocks 32,0,288 to 47,255,303), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Entity's Momentum: 0.00, -0.08, 0.00
+	Entity's Passengers: []
+	Entity's Vehicle: ~~ERROR~~ NullPointerException: null
+Stacktrace:
+	at net.minecraft.world.World.func_72939_s(World.java:1762)
+	at net.minecraft.world.WorldServer.func_72939_s(WorldServer.java:613)
+
+-- Affected level --
+Details:
+	Level name: world
+	All players: 0 total; []
+	Chunk stats: ServerChunkCache: 670 Drop: 0
+	Level seed: -6582963208437931565
+	Level generator: ID 06 - BIOMESOP, ver 0. Features enabled: true
+	Level generator options: 
+	Level spawn location: World: (205,64,224), Chunk: (at 13,4,0 in 12,14; contains blocks 192,0,224 to 207,255,239), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Level time: 13 game time, 13 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 121462 (now: false), thunder time: 140060 (now: false)
+	Level game mode: Game mode: survival (ID 0). Hardcore: false. Cheats: false
+Stacktrace:
+	at net.minecraft.server.MinecraftServer.func_71190_q(MinecraftServer.java:767)
+	at net.minecraft.server.dedicated.DedicatedServer.func_71190_q(DedicatedServer.java:397)
+	at net.minecraft.server.MinecraftServer.func_71217_p(MinecraftServer.java:668)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:526)
+	at java.lang.Thread.run(Thread.java:748)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Linux (amd64) version 4.15.0-91-generic
+	Java Version: 1.8.0_265, Private Build
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Private Build
+	Memory: 1072051080 bytes (1022 MB) / 2075918336 bytes (1979 MB) up to 2075918336 bytes (1979 MB)
+	JVM Flags: 2 total; -Xms1024M -Xms2048M
+	IntCache: cache: 0, tcache: 0, allocated: 3, tallocated: 104
+	FML: MCP 9.42 Powered by Forge 14.23.5.2854 35 mods loaded, 35 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+
+	| State  | ID                    | Version           | Source                                 | Signature                                |
+	|:------ |:--------------------- |:----------------- |:-------------------------------------- |:---------------------------------------- |
+	| LCHIJA | minecraft             | 1.12.2            | minecraft.jar                          | None                                     |
+	| LCHIJA | mcp                   | 9.42              | minecraft.jar                          | None                                     |
+	| LCHIJA | FML                   | 8.0.99.99         | forge-1.12.2-14.23.5.2854.jar          | e3c3d50c7c986df74c645c0ac54639741c90a557 |
+	| LCHIJA | forge                 | 14.23.5.2854      | forge-1.12.2-14.23.5.2854.jar          | e3c3d50c7c986df74c645c0ac54639741c90a557 |
+	| LCHIJA | libnine               | 1.1.9             | libnine-1.12.2-1.1.9.jar               | None                                     |
+	| LCHIJA | forgelin              | 1.8.4             | Shadowfacts' Forgelin-1.8.4.jar        | None                                     |
+	| LCHIJA | librarianlib          | 4.22              | librarianlib-1.12.2-4.22.jar           | None                                     |
+	| LCHIJA | minerva               | 1.0.13            | minerva-library-1.0.13.jar             | b851b8b7c7f4d8d0e910ff27618150ba80c026ec |
+	| LCHIJA | waystones             | 4.1.0             | 传送石碑_1.12.2-4.1.0.jar                  | None                                     |
+	| LCHIJA | dynamictrees          | 1.12.2-0.9.13     | 动态的树-1.12.2-0.9.13.jar                 | None                                     |
+	| LCHIJA | biomesoplenty         | 7.0.1.2441        | 超多生物群系-1.12.2-7.0.1.2441-universal.jar | None                                     |
+	| LCHIJA | dynamictreesbop       | 1.12.2-1.4.1e     | 动态的树：超多生物群系扩展-1.12.2-1.4.1e.jar        | None                                     |
+	| LCHIJA | mantle                | 1.12-1.3.3.55     | 地幔-1.12-1.3.3.55.jar                   | None                                     |
+	| LCHIJA | twilightforest        | 3.11.1021         | 暮色森林-1.12.2-3.11.1021-universal.jar    | None                                     |
+	| LCHIJA | tconstruct            | 1.12.2-2.13.0.183 | 匠魂2-1.12.2-2.13.0.183.jar              | None                                     |
+	| LCHIJA | conarm                | 1.2.5.9           | 匠魂兵工厂_匠魂护甲-1.12.2-1.2.5.9.jar          | 2484ef4d131fdc0dca0647aa21b7b944ddb935a1 |
+	| LCHIJA | baubles               | 1.5.2             | 饰品栏-1.12-1.5.2.jar                     | None                                     |
+	| LCHIJA | tconevo               | 1.0.32            | 匠魂进化-1.12.2-1.0.32.jar                 | None                                     |
+	| LCHIJA | airhop                | 1.1.1             | 多段跳-v1.1.1-1.12.2.jar                  | 12d137bcc36051a1c2c8ea7211cfc1da1c6e9dea |
+	| LCHIJA | wizardry              | 0.11.1            | 巫师艺术-0.11.1.jar                        | None                                     |
+	| LCHIJA | ebwizardry            | 4.2.11            | 巫术学：暮色森林法术包-4.2.11-MC1.12.2.jar        | None                                     |
+	| LCHIJA | tfspellpack           | 1.0.2             | 巫术学：暮色森林扩展包-1.0.2-MC1.12.2.jar         | None                                     |
+	| LCHIJA | botania               | r1.10-363         | 植物魔法+r1.10-363.jar                     | None                                     |
+	| LCHIJA | extraalchemy          | 0.5.4             | 扩展炼金-forge-1.12-build11-0.5.4.jar      | b851b8b7c7f4d8d0e910ff27618150ba80c026ec |
+	| LCHIJA | flammpfeil.slashblade | mc1.12-r32        | 拔刀剑-mc1.12-r32.jar                     | None                                     |
+	| LCHIJA | guideapi              | 1.12-2.1.8-63     | 指南-API-1.12-2.1.8-63.jar               | None                                     |
+	| LCHIJA | travelersbackpack     | 1.0.34            | 旅行者背包-1.12.2-1.0.34.jar                | None                                     |
+	| LCHIJA | oreexcavation         | 1.4.150           | 矿石挖掘-1.4.150.jar                       | None                                     |
+	| LCHIJA | projecte              | 1.12.2-PE1.4.1    | 等价交换-1.12.2-PE1.4.1.jar                | None                                     |
+	| LCHIJA | customnpcs            | 1.12              | 自定义NPC_1.12.2-(05Jul20).jar            | None                                     |
+	| LCHIJA | natura                | 1.12.2-4.3.2.69   | 自然-1.12.2-4.3.2.69.jar                 | None                                     |
+	| LCHIJA | bloodmagic            | 1.12.2-2.4.3-105  | 血魔法2-1.12.2-2.4.3-105.jar              | None                                     |
+	| LCHIJA | chococraft            | 0.9.8.0           | 陆行鸟_1.12.2-0.9.8.0.jar                 | None                                     |
+	| LCHIJA | betteranimalsplus     | 9.0.1             | 更多动物.jar                               | None                                     |
+	| LCHIJA | librarianliblate      | 4.22              | librarianlib-1.12.2-4.22.jar           | None                                     |
+
+	Loaded coremods (and transformers): 
+TconEvoCoreMod (匠魂进化-1.12.2-1.0.32.jar)
+  xyz.phanta.tconevo.coremod.TconEvoClassTransformer
+LibrarianLib Plugin (librarianlib-1.12.2-4.22.jar)
+  com.teamwizardry.librarianlib.asm.LibLibTransformer
+ForgelinPlugin (Shadowfacts' Forgelin-1.8.4.jar)
+  
+Wizardry Plugin (巫师艺术-0.11.1.jar)
+  com.teamwizardry.wizardry.asm.WizardryTransformer
+	Pulsar/tconstruct loaded Pulses: 
+		- TinkerCommons (Enabled/Forced)
+		- TinkerWorld (Enabled/Not Forced)
+		- TinkerTools (Enabled/Not Forced)
+		- TinkerHarvestTools (Enabled/Forced)
+		- TinkerMeleeWeapons (Enabled/Forced)
+		- TinkerRangedWeapons (Enabled/Forced)
+		- TinkerModifiers (Enabled/Forced)
+		- TinkerSmeltery (Enabled/Not Forced)
+		- TinkerGadgets (Enabled/Not Forced)
+		- TinkerOredict (Enabled/Forced)
+		- TinkerIntegration (Enabled/Forced)
+		- TinkerFluids (Enabled/Forced)
+		- TinkerMaterials (Enabled/Forced)
+		- TinkerModelRegister (Enabled/Forced)
+
+	Pulsar/natura loaded Pulses: 
+		- NaturaCommons (Enabled/Forced)
+		- NaturaOverworld (Enabled/Not Forced)
+		- NaturaNether (Enabled/Not Forced)
+		- NaturaDecorative (Enabled/Not Forced)
+		- NaturaTools (Enabled/Not Forced)
+		- NaturaEntities (Enabled/Not Forced)
+		- NaturaOredict (Enabled/Forced)
+		- NaturaWorld (Enabled/Not Forced)
+
+	Profiler Position: N/A (disabled)
+	Player Count: 0 / 20; []
+	Is Modded: Definitely; Server brand changed to 'fml,forge'
+	Type: Dedicated Server (map_server.txt)
